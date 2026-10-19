@@ -54,6 +54,16 @@ function App() {
                 loading="lazy"
                 decoding="async"
               />
+              <div className="calendar-highlights" aria-label="November 24 and 25 wedding dates">
+                <span className="calendar-date-badge groom-ring" aria-label="24th, groom's ring">
+                  <span>24</span>
+                  <sup>th</sup>
+                </span>
+                <span className="calendar-date-badge bride-ring" aria-label="25th, bride's ring">
+                  <span>25</span>
+                  <sup>th</sup>
+                </span>
+              </div>
               <div className="event-schedule" aria-label="Wedding events">
                 <div className="event-row" aria-label="24th November: Reception, 6:00 PM onwards">
                   <span className="event-date" aria-hidden="true">
