@@ -229,11 +229,11 @@ a {
 
 .map-link {
   position: absolute;
-  top: 79%;
+  top: 83.1%;
   left: 50%;
   color: #704b24;
   font-family: "DM Sans", sans-serif;
-  font-size: clamp(8px, 1.3cqw, 13px);
+  font-size: clamp(9px, 1.5cqw, 13px);
   font-weight: 500;
   letter-spacing: 0.01em;
   line-height: 1;
@@ -256,7 +256,7 @@ a {
 
 .event-schedule {
   position: absolute;
-  top: 83%;
+  top: 85.5%;
   left: 20%;
   display: grid;
   width: 60%;
@@ -320,7 +320,7 @@ a {
   justify-content: center;
   gap: 1.5cqw;
   min-height: 5.5cqw;
-  padding: 0.7cqw 1.5cqw;
+  padding: 0 1.5cqw;
 }
 
 .event-date {
