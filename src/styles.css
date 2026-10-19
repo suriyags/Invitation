@@ -287,32 +287,6 @@ a {
   font-size: 0.95cqw;
 }
 
-.calendar-date-badge::before {
-  position: absolute;
-  top: -17%;
-  right: -12%;
-  width: 38%;
-  height: 25%;
-  border: 1.2px solid #a77b3b;
-  border-radius: 50%;
-  background: rgb(248 244 232 / 92%);
-  box-shadow: inset 0 0 0 1px rgb(255 255 255 / 70%);
-  content: "";
-  transform: rotate(-36deg);
-}
-
-.bride-ring::after {
-  position: absolute;
-  top: -25%;
-  right: -17%;
-  width: 17%;
-  aspect-ratio: 1;
-  border: 1px solid #a77b3b;
-  background: #fff8e8;
-  content: "";
-  transform: rotate(45deg);
-}
-
 .event-row {
   display: grid;
   grid-template-columns: 5cqw 1fr;

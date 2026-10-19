@@ -55,11 +55,11 @@ function App() {
                 decoding="async"
               />
               <div className="calendar-highlights" aria-label="November 24 and 25 wedding dates">
-                <span className="calendar-date-badge groom-ring" aria-label="24th, groom's ring">
+                <span className="calendar-date-badge" aria-label="November 24th">
                   <span>24</span>
                   <sup>th</sup>
                 </span>
-                <span className="calendar-date-badge bride-ring" aria-label="25th, bride's ring">
+                <span className="calendar-date-badge" aria-label="November 25th">
                   <span>25</span>
                   <sup>th</sup>
                 </span>
