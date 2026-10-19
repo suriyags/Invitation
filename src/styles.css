@@ -229,14 +229,14 @@ a {
 
 .map-link {
   position: absolute;
-  top: 78.45%;
+  top: 79%;
   left: 50%;
   color: #704b24;
   font-family: "DM Sans", sans-serif;
-  font-size: clamp(9px, 1.55cqw, 15px);
+  font-size: clamp(8px, 1.3cqw, 13px);
   font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.1;
+  letter-spacing: 0.01em;
+  line-height: 1;
   text-decoration: none;
   transform: translateX(-50%);
   white-space: nowrap;
