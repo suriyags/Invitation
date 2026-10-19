@@ -20,7 +20,6 @@ function App() {
               src={`${import.meta.env.BASE_URL}blue-floral-wedding-cover.png`}
               alt="Blue floral wedding invitation cover with a Ganesh medallion and gold nameplate"
             />
-            <span className="cover-subtitle" aria-hidden="true" />
             <span className="cover-nameplate" aria-label="Suriya and Nisha">
               SURIYA &amp; NISHA
             </span>
