@@ -55,8 +55,26 @@ function App() {
                 decoding="async"
               />
               <div className="event-schedule" aria-label="Wedding events">
-                <p>Reception · 6:00 PM onwards</p>
-                <p>Muhurtham · 9:00–10:30 AM</p>
+                <div className="event-row" aria-label="24th November: Reception, 6:00 PM onwards">
+                  <span className="event-date" aria-hidden="true">
+                    <span>24</span>
+                    <sup>th</sup>
+                  </span>
+                  <span className="event-details">
+                    <strong>Reception</strong>
+                    <span>6:00 PM onwards</span>
+                  </span>
+                </div>
+                <div className="event-row" aria-label="25th November: Muhurtham, 9:00 to 10:30 AM">
+                  <span className="event-date" aria-hidden="true">
+                    <span>25</span>
+                    <sup>th</sup>
+                  </span>
+                  <span className="event-details">
+                    <strong>Muhurtham</strong>
+                    <span>9:00–10:30 AM</span>
+                  </span>
+                </div>
               </div>
             </div>
             <div className="invitation-actions">

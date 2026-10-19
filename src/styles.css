@@ -229,22 +229,83 @@ a {
 
 .event-schedule {
   position: absolute;
-  top: 82.5%;
-  left: 12%;
+  top: 81%;
+  left: 14%;
   display: grid;
-  width: 76%;
-  gap: 1cqw;
+  width: 72%;
+  gap: 1.1cqw;
   color: #68451f;
   font-family: "Playfair Display", Georgia, serif;
-  font-size: 2.15cqw;
-  font-weight: 600;
-  letter-spacing: 0.035em;
-  text-align: center;
-  text-shadow: 0 1px rgb(255 255 255 / 85%);
 }
 
-.event-schedule p {
-  margin: 0;
+.event-row {
+  display: grid;
+  grid-template-columns: 5.7cqw 1fr;
+  align-items: center;
+  gap: 2cqw;
+  min-height: 6.2cqw;
+  padding: 0.8cqw 2cqw;
+  border: 1px solid rgb(167 123 59 / 54%);
+  border-radius: 999px;
+  background: rgb(248 244 232 / 78%);
+  box-shadow: 0 2px 8px rgb(73 55 31 / 10%), inset 0 0 0 1px rgb(255 255 255 / 70%);
+}
+
+.event-date {
+  position: relative;
+  display: grid;
+  width: 5.2cqw;
+  aspect-ratio: 1;
+  place-content: center;
+  border: 1px solid var(--gold);
+  border-radius: 1.1cqw;
+  background: linear-gradient(145deg, #fffdf8, #ead7b5);
+  color: #68451f;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 2.9cqw;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+}
+
+.event-date::before {
+  position: absolute;
+  top: -0.65cqw;
+  left: 24%;
+  width: 0.7cqw;
+  height: 1.2cqw;
+  border: 1px solid var(--gold);
+  border-radius: 999px;
+  background: #f7f0e3;
+  box-shadow: 2.7cqw 0 0 -1px #f7f0e3, 2.7cqw 0 0 0 var(--gold);
+  content: "";
+}
+
+.event-date sup {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.1cqw;
+}
+
+.event-details {
+  display: grid;
+  gap: 0.35cqw;
+  text-align: left;
+}
+
+.event-details strong {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 2.5cqw;
+  font-weight: 600;
+  letter-spacing: 0.045em;
+}
+
+.event-details > span {
+  font-family: "DM Sans", sans-serif;
+  font-size: 2.05cqw;
+  letter-spacing: 0.025em;
 }
 
 .invitation-actions {
@@ -343,9 +404,6 @@ a {
     width: 100%;
   }
 
-  .event-schedule {
-    font-size: 2.5cqw;
-  }
 }
 
 @media (hover: none) {
