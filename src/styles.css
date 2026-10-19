@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap");
+
+:root {
+  font-family: "DM Sans", sans-serif;
+  color: #29435b;
+  background: #d9e8f4;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --gold: #a77b3b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  background: #d9e8f4;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+.wedding-scene {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 50% 45%, rgb(255 255 255 / 74%), transparent 68%),
+    repeating-linear-gradient(135deg, rgb(67 105 139 / 3%) 0 1px, transparent 1px 6px),
+    linear-gradient(145deg, #d1e2f0, #e8f1f8 52%, #d2e2ef);
+}
+
+.plain-cover,
+.invitation-stage {
+  position: absolute;
+  inset: 0;
+}
+
+.plain-cover {
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  animation: text-appear 650ms ease both;
+  background: radial-gradient(ellipse at center, #edf4f9 0%, #d8e6f1 74%, #c7d9e8 100%);
+}
+
+.cover-art {
+  position: relative;
+  width: min(92vw, 61vh);
+  aspect-ratio: 2 / 3;
+  container-type: inline-size;
+}
+
+.cover-artwork {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.cover-subtitle,
+.cover-nameplate {
+  position: absolute;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.cover-subtitle {
+  top: 22.15%;
+  left: 24%;
+  width: 52%;
+  height: 3.35%;
+  color: #294862;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 2.05cqw;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+}
+
+.cover-subtitle::before,
+.cover-nameplate::before {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  content: "";
+  mix-blend-mode: lighten;
+  pointer-events: none;
+}
+
+.cover-subtitle::before {
+  border-radius: 50%;
+  background: radial-gradient(ellipse, #b4d0e6 0 73%, rgb(180 208 230 / 0%) 100%);
+}
+
+.cover-nameplate {
+  top: 74.15%;
+  left: 29%;
+  width: 42%;
+  height: 2.65%;
+  border-radius: 999px;
+  color: #55351f;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 2.1cqw;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+}
+
+.cover-nameplate::before {
+  border-radius: inherit;
+  background: linear-gradient(180deg, #dfb762 0%, #f3d995 22%, #e9c578 72%, #c99547 100%);
+}
+
+.cover-art .round-open {
+  position: absolute;
+  z-index: 2;
+  top: 45.2%;
+  left: 42.1%;
+  width: 15.8%;
+  height: auto;
+  aspect-ratio: 1;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  box-shadow: none;
+  color: transparent;
+  cursor: pointer;
+  transition: background 220ms ease, transform 220ms ease;
+}
+
+.cover-art .round-open:hover {
+  background: radial-gradient(circle, transparent 48%, rgb(246 214 150 / 12%) 53%, transparent 72%);
+  box-shadow: none;
+  transform: scale(1.04);
+}
+
+.cover-art .round-open:focus-visible {
+  outline: 2px solid #9c7139;
+  outline-offset: 3px;
+}
+
+.invitation-stage {
+  z-index: 2;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  background: linear-gradient(145deg, #d7e6f1, #f5f8fa 52%, #d7e6f1);
+  scrollbar-color: #b08a55 #e8eff4;
+  scrollbar-width: thin;
+}
+
+.phase-opening-invitation .invitation-page-image:first-child {
+  animation: invitation-focus-reveal 900ms ease-out both;
+}
+
+.invitation-pages {
+  display: flex;
+  width: 100%;
+  min-height: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 22px 16px 42px;
+}
+
+.invitation-page-image {
+  display: block;
+  width: min(100%, 62vh);
+  height: auto;
+  flex: 0 0 auto;
+}
+
+.invitation-actions {
+  display: grid;
+  justify-items: center;
+  padding: 0 0 12px;
+}
+
+.text-button {
+  display: inline-block;
+  padding: 13px 21px;
+  border: 1px solid var(--gold);
+  border-radius: 999px;
+  background: linear-gradient(#f8efd9, #dfc38e);
+  box-shadow: 0 4px 12px rgb(117 87 44 / 14%), inset 0 1px rgb(255 255 255 / 80%);
+  color: #574125;
+  cursor: pointer;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: filter 200ms ease, transform 250ms ease, box-shadow 200ms ease;
+}
+
+.text-button:hover {
+  filter: brightness(1.04);
+  transform: translateY(-2px);
+  box-shadow: 0 7px 18px rgb(117 87 44 / 20%);
+}
+
+.text-button:focus-visible,
+.restart-button:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 4px;
+}
+
+.restart-button {
+  display: block;
+  margin: 18px auto 0;
+  padding: 8px 12px;
+  border: 0;
+  background: transparent;
+  color: #29435b;
+  cursor: pointer;
+  font-size: 11px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+@keyframes text-appear {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes invitation-focus-reveal {
+  from {
+    filter: blur(16px);
+    opacity: 0.65;
+  }
+  to {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .invitation-pages {
+    gap: 16px;
+    padding: 12px 0 28px;
+  }
+
+  .invitation-page-image {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
