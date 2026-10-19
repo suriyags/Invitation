@@ -192,27 +192,29 @@ a {
   flex: 0 0 auto;
 }
 
-.invitation-art {
+.invitation-art,
+.save-date-art {
   position: relative;
   width: min(100%, 62vh);
   flex: 0 0 auto;
   container-type: inline-size;
 }
 
-.invitation-art .invitation-page-image {
+.invitation-art .invitation-page-image,
+.save-date-art .invitation-page-image {
   width: 100%;
 }
 
 .event-schedule {
   position: absolute;
-  top: 78%;
-  left: 13%;
+  top: 82.5%;
+  left: 12%;
   display: grid;
-  width: 74%;
-  gap: 1.4cqw;
+  width: 76%;
+  gap: 1cqw;
   color: #68451f;
   font-family: "Playfair Display", Georgia, serif;
-  font-size: 2.4cqw;
+  font-size: 2.15cqw;
   font-weight: 600;
   letter-spacing: 0.035em;
   text-align: center;
@@ -302,8 +304,13 @@ a {
     width: 100%;
   }
 
-  .invitation-art {
+  .invitation-art,
+  .save-date-art {
     width: 100%;
+  }
+
+  .event-schedule {
+    font-size: 2.5cqw;
   }
 }
 
