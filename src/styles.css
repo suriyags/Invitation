@@ -229,16 +229,15 @@ a {
 
 .map-link {
   position: absolute;
-  top: 79.4%;
+  top: 78.45%;
   left: 50%;
   color: #704b24;
   font-family: "DM Sans", sans-serif;
-  font-size: 2.3cqw;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  line-height: 1.4;
-  text-decoration: underline;
-  text-underline-offset: 0.2em;
+  font-size: clamp(9px, 1.55cqw, 15px);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+  text-decoration: none;
   transform: translateX(-50%);
   white-space: nowrap;
 }
@@ -246,6 +245,8 @@ a {
 .map-link:hover,
 .map-link:focus-visible {
   color: #513719;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
 }
 
 .map-link:focus-visible {
