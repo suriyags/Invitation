@@ -131,6 +131,47 @@ a {
   transition: background 220ms ease, transform 220ms ease;
 }
 
+.cover-art .round-open::before {
+  position: absolute;
+  inset: -8%;
+  border: 1px solid rgb(167 123 59 / 75%);
+  border-radius: inherit;
+  content: "";
+  pointer-events: none;
+  animation: medallion-pulse 2.4s ease-out infinite;
+}
+
+.cover-art .round-open::after {
+  position: absolute;
+  top: calc(100% + 16px);
+  left: 50%;
+  width: max-content;
+  max-width: min(68vw, 240px);
+  padding: 8px 12px;
+  border: 1px solid rgb(167 123 59 / 75%);
+  border-radius: 999px;
+  background: rgb(248 244 232 / 96%);
+  box-shadow: 0 3px 12px rgb(73 55 31 / 16%);
+  color: #55351f;
+  content: "Click here to open the invite";
+  font-family: "DM Sans", sans-serif;
+  font-size: clamp(10px, 2.6cqw, 13px);
+  font-weight: 500;
+  letter-spacing: 0.035em;
+  line-height: 1.3;
+  opacity: 0;
+  pointer-events: none;
+  text-transform: none;
+  transform: translate(-50%, -5px);
+  transition: opacity 220ms ease, transform 220ms ease;
+}
+
+.cover-art .round-open:hover::after,
+.cover-art .round-open:focus-visible::after {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
 .cover-art .round-open:hover {
   background: radial-gradient(circle, transparent 48%, rgb(246 214 150 / 12%) 53%, transparent 72%);
   box-shadow: none;
@@ -275,6 +316,18 @@ a {
   }
 }
 
+@keyframes medallion-pulse {
+  0% {
+    opacity: 0.8;
+    transform: scale(0.88);
+  }
+  75%,
+  100% {
+    opacity: 0;
+    transform: scale(1.45);
+  }
+}
+
 @media (max-width: 600px) {
   .invitation-pages {
     gap: 16px;
@@ -292,6 +345,13 @@ a {
 
   .event-schedule {
     font-size: 2.5cqw;
+  }
+}
+
+@media (hover: none) {
+  .cover-art .round-open::after {
+    opacity: 1;
+    transform: translate(-50%, 0);
   }
 }
 
