@@ -320,10 +320,9 @@ a {
   gap: 1.5cqw;
   min-height: 5.5cqw;
   padding: 0.7cqw 1.5cqw;
-  border: 1px solid rgb(167 123 59 / 54%);
   border-radius: 999px;
   background: rgb(248 244 232 / 78%);
-  box-shadow: 0 2px 8px rgb(73 55 31 / 10%), inset 0 0 0 1px rgb(255 255 255 / 70%);
+  box-shadow: 0 2px 8px rgb(73 55 31 / 10%);
 }
 
 .event-date {
