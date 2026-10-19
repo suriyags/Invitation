@@ -40,11 +40,17 @@ function App() {
           aria-label="Wedding invitation followed by the save-the-date page"
         >
           <div className="invitation-pages">
-            <img
-              className="invitation-page-image"
-              src={`${import.meta.env.BASE_URL}blue-floral-wedding-invitation.png`}
-              alt="Wedding invitation for Suriya and Nisha at SSR Palace, Red Hills, Chennai"
-            />
+            <div className="invitation-art">
+              <img
+                className="invitation-page-image"
+                src={`${import.meta.env.BASE_URL}blue-floral-wedding-invitation.png`}
+                alt="Wedding invitation for Suriya and Nisha at SSR Palace, Red Hills, Chennai"
+              />
+              <div className="event-schedule" aria-label="Wedding events">
+                <p>Reception · 6:00 PM onwards</p>
+                <p>Muhurtham · 9:00–10:30 AM</p>
+              </div>
+            </div>
             <img
               className="invitation-page-image"
               src={`${import.meta.env.BASE_URL}blue-floral-save-the-date.png`}

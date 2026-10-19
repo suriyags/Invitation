@@ -192,6 +192,37 @@ a {
   flex: 0 0 auto;
 }
 
+.invitation-art {
+  position: relative;
+  width: min(100%, 62vh);
+  flex: 0 0 auto;
+  container-type: inline-size;
+}
+
+.invitation-art .invitation-page-image {
+  width: 100%;
+}
+
+.event-schedule {
+  position: absolute;
+  top: 78%;
+  left: 13%;
+  display: grid;
+  width: 74%;
+  gap: 1.4cqw;
+  color: #68451f;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 2.4cqw;
+  font-weight: 600;
+  letter-spacing: 0.035em;
+  text-align: center;
+  text-shadow: 0 1px rgb(255 255 255 / 85%);
+}
+
+.event-schedule p {
+  margin: 0;
+}
+
 .invitation-actions {
   display: grid;
   justify-items: center;
@@ -268,6 +299,10 @@ a {
   }
 
   .invitation-page-image {
+    width: 100%;
+  }
+
+  .invitation-art {
     width: 100%;
   }
 }
