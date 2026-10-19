@@ -17,7 +17,7 @@ function App() {
           <div className="cover-art">
             <img
               className="cover-artwork"
-              src="/blue-floral-wedding-cover.png"
+              src={`${import.meta.env.BASE_URL}blue-floral-wedding-cover.png`}
               alt="Blue floral wedding invitation cover with a Ganesh medallion and gold nameplate"
             />
             <span className="cover-subtitle" aria-hidden="true" />
@@ -42,12 +42,12 @@ function App() {
           <div className="invitation-pages">
             <img
               className="invitation-page-image"
-              src="/blue-floral-wedding-invitation.png"
+              src={`${import.meta.env.BASE_URL}blue-floral-wedding-invitation.png`}
               alt="Wedding invitation for Suriya and Nisha at SSR Palace, Red Hills, Chennai"
             />
             <img
               className="invitation-page-image"
-              src="/blue-floral-save-the-date.png"
+              src={`${import.meta.env.BASE_URL}blue-floral-save-the-date.png`}
               alt="Save the Date poster with the November 2026 calendar and November 24 and 25 highlighted"
               loading="lazy"
               decoding="async"
