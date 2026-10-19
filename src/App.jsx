@@ -54,6 +54,15 @@ function App() {
                 loading="lazy"
                 decoding="async"
               />
+              <a
+                className="map-link"
+                href="https://share.google/7jxBKXHFYghycN9BH"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Open SSR Palace in Google Maps"
+              >
+                Click here for map
+              </a>
               <div className="calendar-highlights" aria-label="November 24 and 25 wedding dates">
                 <span className="calendar-date-badge" aria-label="November 24th">
                   <span>24</span>

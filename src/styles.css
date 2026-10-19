@@ -227,9 +227,41 @@ a {
   width: 100%;
 }
 
+.map-link {
+  position: absolute;
+  top: 79.4%;
+  left: 50%;
+  padding: 0.45cqw 1.7cqw;
+  border: 1px solid rgb(167 123 59 / 65%);
+  border-radius: 999px;
+  background: rgb(248 244 232 / 88%);
+  box-shadow: 0 1px 4px rgb(79 59 32 / 12%);
+  color: #704b24;
+  font-family: "DM Sans", sans-serif;
+  font-size: 2.3cqw;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.map-link:hover,
+.map-link:focus-visible {
+  background: #fffdf8;
+  color: #513719;
+}
+
+.map-link:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
 .event-schedule {
   position: absolute;
-  top: 81%;
+  top: 83%;
   left: 20%;
   display: grid;
   width: 60%;
